@@ -1,0 +1,113 @@
+/*
+ * Copyright (C) 2016 PHYTEC Messtechnik GmbH
+ * Author: Christian Hemp <c.hemp@phytec.de>
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 2 as
+ * published by the Free Software Foundation.
+ */
+
+/dts-v1/;
+#include "imx6ul.dtsi"
+#include "imx6ul-phytec-phycore-som.dtsi"
+#include "imx6ul-phytec-ruggedboard.dtsi"
+#include "imx6ul-phytec-segin-peb-av-02.dtsi"
+
+/ {
+
+	model = "Rugged Board i.MX6 UltraLite";
+	compatible = "phytec,imx6ul-pbacd10", "phytec,imx6ul-pcl063","fsl,imx6ul";
+};
+
+&adc1 {
+	status = "okay";
+};
+
+&can1 {
+	status = "okay";
+};
+&can2 {
+        status = "okay";
+};
+
+
+&ethphy1 {
+	status = "okay";
+};
+
+&fec1 {
+	status = "okay";
+};
+
+&fec2 {
+	status = "okay";
+};
+
+&gpmi {
+	status = "okay";
+};
+
+&reg_can1_en {
+	status = "okay";
+};
+/*&reg_can2_en {
+        status = "okay";
+};*/
+
+&uart2 {
+	status = "okay";
+};
+
+&uart3 {
+	status = "okay";
+};
+
+&uart4 {
+        status = "okay";
+};
+
+&uart5 {
+	status = "okay";
+};
+
+&uart6 {
+	rs485-rts-active-high;
+	linux,rs485-enabled-at-boot-time;
+	status = "okay";
+};
+&uart7 {
+        status = "okay";
+};
+&uart8 {
+        status = "okay";
+};
+
+
+
+&usbotg1 {
+	status = "okay";
+};
+
+&usbotg2 {
+	status = "okay";
+};
+
+&usdhc1 {
+	status = "okay";
+};
+
+&usdhc2 {
+	status = "okay";
+};
+
+&ecspi1 {
+	status = "okay";
+};
+
+&ecspi2 {
+	status = "okay";
+};
+
+&pwm3 {
+	status = "okay";
+};
